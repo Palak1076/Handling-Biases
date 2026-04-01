@@ -40,7 +40,7 @@ def preprocess_data(df):
     cols_to_drop = missing[missing > 50].index
     df = df.drop(columns=cols_to_drop)
 
-    # Fill missing values
+    # Fill in the missing values
     for col in df.select_dtypes(include=['float64', 'int64']):
         df[col] = df[col].fillna(df[col].median())
     for col in df.select_dtypes(include=['object']):
@@ -137,7 +137,7 @@ def prepare_scaled_data(X, y):
 
     return X_lr, X_tree, scaler
 
-# Train a single model
+# Training a single model
 @st.cache_resource
 def train_single_model(model_key, X_train_lr, X_train_tree, y_train):
     scale_pos_weight = (y_train == 0).sum() / (y_train == 1).sum()
@@ -237,7 +237,7 @@ if page == "Data Overview":
 elif page == "Model Training":
     st.header("🤖 Model Training")
 
-    # training includes dropdown for each model and all models
+    # Training includes dropdown for each model and all models
     model_options = ["All Models", "Logistic Regression", "Decision Tree", "Random Forest", "XGBoost"]
     selected_model_option = st.selectbox("Choose model(s) to train", model_options)
 
