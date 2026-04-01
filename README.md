@@ -61,3 +61,5 @@ All models use:
 - `test_data.pkl`: Test data for evaluation
 - `xgb_model.pkl`: Trained model (created after training)
 - `label_encoders.pkl`: Encoders for categorical features
+
+- <img width="1500" height="829" alt="image" src="https://github.com/user-attachments/assets/960b39f8-59a9-45bb-8211-0aa835ae3eed" />
