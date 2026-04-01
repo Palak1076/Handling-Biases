@@ -63,3 +63,5 @@ All models use:
 - `label_encoders.pkl`: Encoders for categorical features
 
 - <img width="1500" height="829" alt="image" src="https://github.com/user-attachments/assets/960b39f8-59a9-45bb-8211-0aa835ae3eed" />
+<img width="1503" height="315" alt="image" src="https://github.com/user-attachments/assets/031c7595-b49a-4890-9c32-baa23456a32f" />
+
